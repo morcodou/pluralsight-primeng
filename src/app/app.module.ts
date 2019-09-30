@@ -17,13 +17,14 @@ import { SettingsComponent } from './settings/settings.component';
 import { AlltimesComponent } from './alltimes/alltimes.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { FielderrorsComponent } from './fielderrors/fielderrors.component';
+import { MtimesheetComponent } from './mtimesheet/mtimesheet.component';
 
 
 const appRoutes: Routes = [
   { path: "", redirectTo: "/dashboard", pathMatch: "full" },
   { path: "dashboard", component: DashboardComponent },
   { path: "alltimes", component: AlltimesComponent },
-  { path: "timesheet", component: TimesheetComponent},
+  { path: "timesheet", component: MtimesheetComponent},
   { path: "projects", component: ProjectsComponent},
   { path: "profile", component: ProfileComponent},
   { path: "settings", component: SettingsComponent},
@@ -39,7 +40,8 @@ const appRoutes: Routes = [
     AlltimesComponent,
     ProfileComponent,
     SettingsComponent,
-    FielderrorsComponent
+    FielderrorsComponent,
+    MtimesheetComponent
   ],
   imports: [
     BrowserModule,
